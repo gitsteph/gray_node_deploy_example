@@ -65,7 +65,7 @@ function draw() {
 
   if (stationData && stationData.length > 0) {
     textAlign(LEFT);
-    for (let i = 0; i < 21; i++) {
+    for (let i = 0; i < stationData.length; i++) {
       fill(getColor(stationData[i]["color"]));
       rect(x, y, 80, 80);
       
